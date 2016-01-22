@@ -1,0 +1,25 @@
+<div class="post">
+  <div class="top-bar">
+    <img class="profile-pic" src="{{profilePic}}" />
+    <h3 class="profile-name">{{profileName}}</h3>
+    <h3 class="time-ago">{{timeAgo}}</h3>
+  </div>
+  <div class="main-pic">
+    <img class="pic" src="{{pic}}" />
+  </div>
+  <div class="bottom-bar">
+    <div class="likes">{{likes}} likes</div>
+    <div class="desc">
+      {{profileName}} - {{postDesc}}
+    </div>
+    {{#each comments as |comment|}}
+      <div class="comment">
+        {{comment.commentName}} - {{comment.commentDesc}}
+      </div>
+    {{/each}}
+  </div>
+  <div class="comment-bar">
+    <i class="fa fa-heart"></i>
+    <input type="text" placeholder="Add a comment..." />
+  </div>
+</div>

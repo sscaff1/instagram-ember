@@ -1,0 +1,6 @@
+{{#if instagramLoggedIn}}
+  <button class="login-logout" {{action 'instagramLogout'}}>Logout</button>
+{{else}}
+  <h3>Login with to Instagram Below</h3>
+  <button class="login-logout" {{action 'instagramLogin'}}>Login</button>
+{{/if}}
